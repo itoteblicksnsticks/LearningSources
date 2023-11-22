@@ -20,10 +20,15 @@ Navigate: to `Here`, in `Main.lua` to see the function being initialized (Ctrl +
 
 ## How it works:
 
-if (Inst[2] ~= Inst[4]) then  <-- not EQ hooked
+Essentially, "EQ Hooking" refers to changing conditional checks from 'EQ' to 'NEQ' or vice versa
 
-if (Inst[2] == Inst[4]) then <-- EQ hooked
+# Example
+```
+if (Inst[2] == Inst[4]) then  <-- not EQ hooked
+```
 
-Essentially, "EQ Hooking" is the act of changing the conditional check from a "NEQ" to a "EQ" comparison or "EQ" to "NEQ"
+```
+if (Inst[2] ~= Inst[4]) then <-- EQ hooked
+```
 
 Navigate: to `<--`, in `Main.lua` to see the EQ Hooking being initialized (Ctrl + F)
